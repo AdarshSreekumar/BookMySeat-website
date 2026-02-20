@@ -17,6 +17,8 @@ import Pnf from './pages/Pnf'
 import Review from './user/Review'
 import CoordinatorDashboard from './user/CoordinatorDashboard'
 import Events from './pages/Events'
+import PaymentFailed from './user/PaymentFailed'
+import PaymentSuccess from './user/PaymentSuccess'
 
 
 function App() {
@@ -34,6 +36,9 @@ function App() {
       <Route path='/bookingandpay' element={<BookingAndPayment/>}/>
       <Route path='/book-seats/:id' element={<Seat />} />
       <Route path='/review' element={<Review/>}/>
+      <Route path='user/payment-failed' element={<PaymentFailed/>}/>
+      <Route path='user/payment-success' element={<PaymentSuccess/>}/>
+      
 
       <Route path='/coordinatordashboard' element={<CoordinatorDashboard />} />
        <Route path='/events' element={<Events/>}/>

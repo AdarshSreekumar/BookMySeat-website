@@ -12,6 +12,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@react-oauth/google": "^0.13.4",
+    "@stripe/stripe-js": "^8.6.4",
     "@tailwindcss/vite": "^4.1.18",
     "axios": "^1.13.2",
     "bootstrap": "^5.3.8",

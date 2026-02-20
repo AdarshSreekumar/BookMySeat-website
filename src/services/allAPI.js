@@ -96,3 +96,19 @@ export const getHomeEventsAPI = async () => {
 export const getEventSeatsAPI=async(eventId)=>{
     return await commomAPI("GET",`${serverURL}/get-all-seats/${eventId}`,{}) 
 }
+
+
+// Delete event API
+export const deleteEventAPI = async (id, header) => {
+    return await commomAPI("DELETE", `${serverURL}/event/remove/${id}`, {}, header);
+};
+
+// Payment API
+export const processPaymentAPI = async (reqBody, reqHeader) => {
+    return await commomAPI("POST", `${serverURL}/payment`, reqBody, reqHeader);
+};
+
+// Get all customer bookings for coordinator/admin
+export const getAllBookingAPI = async (reqHeader) => {
+    return await commomAPI("GET", `${serverURL}/all-bookings`, "", reqHeader);
+};

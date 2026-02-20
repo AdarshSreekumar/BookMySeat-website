@@ -175,7 +175,7 @@ const Home = () => {
     <div className="flex flex-col min-h-screen" style={styles.pageWrapper}>
       {/* --- NAVIGATION --- */}
       <nav style={styles.navbar} className="sticky top-0 z-[100] px-4 md:px-12 border-b border-white/10 backdrop-blur-md">
-        <div style={styles.logo}>A <span className="text-teal-400">Auditorium</span></div>
+        <div style={styles.logo}><span className="text-teal-400">Auditorium</span></div>
         
         <div className="flex items-center gap-4 md:gap-8">
           <div className="hidden md:flex items-center gap-8">
